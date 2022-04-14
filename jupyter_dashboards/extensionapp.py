@@ -26,10 +26,10 @@ from traitlets.config.application import Application
 
 # Make copies to reuse flags and aliases
 INSTALL_FLAGS = {}
-INSTALL_FLAGS.update(flags)
+INSTALL_FLAGS |= flags
 
 INSTALL_ALIASES = {}
-INSTALL_ALIASES.update(aliases)
+INSTALL_ALIASES |= aliases
 del INSTALL_ALIASES['destination']
 
 
